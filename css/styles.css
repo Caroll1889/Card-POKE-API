@@ -35,6 +35,21 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  position: relative;
+}
+
+.flex-button {
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 18px;
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-left: 35px;
+  margin-top: 30px;
+  font-weight: 700;
+  background-color: #fa8888;
+  cursor: pointer;
 }
 
 .card {
@@ -66,14 +81,17 @@ body {
 }
 
 .card-body-img {
+  width: 150px;
+  height: 150px;
   border: 5px solid white;
   border-radius: 50%;
-  margin-top: calc(-48px - 5px);
+  margin-top: calc(-100px - 5px);
   background-color: white;
 }
 
 .card-body-title {
   font-size: 1.8rem;
+  text-transform: capitalize;
 }
 
 .card-body-title span {
@@ -85,6 +103,7 @@ body {
 .card-body-text {
   color: var(--dark-gray);
   font-size: 1.6rem;
+  text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 2rem;
 }
