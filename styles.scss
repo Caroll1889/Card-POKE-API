@@ -27,6 +27,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
+
+    &-button {
+        position: absolute;
+        font-size: 1.5rem;
+        padding: 18px;
+        display: block;
+        width: 250px;
+        height: 50px;
+        margin-left: 35px;
+        margin-top: 30px;
+        font-weight: 700;
+        background-color: rgb(250, 136, 136);
+        cursor: pointer;
+    }
 }
 
 .card {
@@ -48,14 +63,17 @@ body {
         border-bottom: 0.2px solid rgba(153, 153, 153, 0.383);
 
         &-img {
+            width: 150px;
+            height: 150px;
             border: 5px solid white;
             border-radius: 50%;
-            margin-top: calc(-48px - 5px);
+            margin-top: calc(-100px - 5px);
             background-color: white;
         }
 
         &-title {
             font-size: 1.8rem;
+            text-transform: capitalize;
 
             span {
                 color: var(--dark-gray);
@@ -67,6 +85,7 @@ body {
         &-text {
             color: var(--dark-gray);
             font-size: 1.6rem;
+            text-transform: capitalize;
             margin-top: 0;
             margin-bottom: 2rem;
         }
